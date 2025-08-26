@@ -39,7 +39,8 @@
         </div>
     </section> 
 
-    <section id="products-container" class="w-11/12 mx-auto py-[50px] grid grid-cols-12 gap-8">
+   <div class="bg-[#f8f8f8]">
+     <section id="products-container" class="w-11/12 mx-auto py-[50px] grid grid-cols-12 gap-8 ">
         <section id="product-box" class="col-span-9">
             <div class="mb-[50px]">
                 <h1 class="text-2xl font-bold">Kitchenware</h1>
@@ -62,7 +63,7 @@
     </div>
     <h2 class="card-title font-work-sans text-[20px]">K. Accessories</h2>
     <p class="text-[#11111180] font-work-sans text-[20px] ">39.00 TK</p>
-    
+     <button class="btn bg-[#e527b2] text-white btn-block">Add to Cart</button>
   </div>
 </div>
 
@@ -83,7 +84,7 @@
     </div>
     <h2 class="card-title font-work-sans text-[20px]">K. Accessories</h2>
     <p class="text-[#11111180] font-work-sans text-[20px] ">25.00 TK</p>
-    
+     <button class="btn bg-[#e527b2] text-white btn-block">Add to Cart</button>
   </div>
 </div>
 <div class="card bg-base-100 shadow-sm">
@@ -104,7 +105,7 @@
     </div>
     <h2 class="card-title font-work-sans text-[20px]">Home Cooker</h2>
     <p class="text-[#11111180] font-work-sans text-[20px] ">49.00 TK</p>
-    
+     <button class="btn bg-[#e527b2] text-white btn-block">Add to Cart</button>
   </div>
 </div>
 
@@ -134,7 +135,7 @@
     </div>
     <h2 class="card-title font-work-sans text-[20px]">Sports Back Cap</h2>
     <p class="text-[#11111180] font-work-sans text-[20px] ">49.00 TK</p>
-    
+     <button class="btn bg-[#e527b2] text-white btn-block">Add to Cart</button>
   </div>
 </div>
 
@@ -155,7 +156,7 @@
     </div>
     <h2 class="card-title font-work-sans text-[20px]">Full Jersey Set</h2>
     <p class="text-[#11111180] font-work-sans text-[20px] ">69.00 TK</p>
-    
+     <button class="btn bg-[#e527b2] text-white btn-block">Add to Cart</button>
   </div>
 </div>
 <div class="card bg-base-100 shadow-sm">
@@ -175,7 +176,7 @@
     </div>
     <h2 class="card-title font-work-sans text-[20px]">Sports cates</h2>
     <p class="text-[#11111180] font-work-sans text-[20px] ">159.00 TK</p>
-    
+     <button class="btn bg-[#e527b2] text-white btn-block">Add to Cart</button>
   </div>
 </div>
 
@@ -205,7 +206,7 @@
     </div>
     <h2 class="card-title font-work-sans text-[20px]">Single Relax Chair</h2>
     <p class="text-[#11111180] font-work-sans text-[20px] ">185.00 TK</p>
-    
+     <button class="btn bg-[#e527b2] text-white btn-block">Add to Cart</button>
   </div>
 </div>
 
@@ -226,7 +227,7 @@
     </div>
     <h2 class="card-title font-work-sans text-[20px]">Children play</h2>
     <p class="text-[#11111180] font-work-sans text-[20px] ">299.00 TK</p>
-    
+     <button class="btn bg-[#e527b2] text-white btn-block">Add to Cart</button>
   </div>
 </div>
 <div class="card bg-base-100 shadow-sm">
@@ -246,7 +247,7 @@
     </div>
     <h2 class="card-title font-work-sans text-[20px]">Flexible Sofa</h2>
     <p class="text-[#11111180] font-work-sans text-[20px] ">339.00 TK</p>
-    
+     <button class="btn bg-[#e527b2] text-white btn-block">Add to Cart</button>
   </div>
 </div>
 
@@ -254,8 +255,36 @@
                 </div>
             </div>
         </section>
-        <aside id="cart-box" class="col-span-3"></aside>
+
+        <!-- Aside part -->
+        <aside id="cart-box" class="col-span-3  mt-[35px]">
+             <section class="bg-[#FFFFFF] rounded-[8px] shadow">
+                <div class="flex justify-center items-center">
+                    <div class="py-[24px]">
+                    <h2 class="text-[20px] font-medium font-work-sans text-[#111111] ">Have coupon?</h2>
+<div class="join">
+  <input class="input join-item" placeholder="Coupon code" />
+  <button class="btn join-item font-semibold text-[#FFFFFF] bg-[#E527B2] rounded-[0px_8px_8px_0px]">Apply</button>
+</div>
+                </div>
+                </div>
+            </section>
+
+            <div class="cart-box bg-white mt-10 p-5">
+                <h3 class="font-bold">Cart</h3>
+                <div id="cart-container"></div>
+
+                <div class="">
+                    <h2>Total Price: <span id="total-price">0</span> TK</h2>
+                    <h2>Total Quantity: <span id="total-quantity">0</span> Items</h2>
+                    <button class="btn bg-[#e527b2] text-white btn-block">Make Purchase</button>
+                   
+                </div>
+
+            </div>
+        </aside>
 
     </section>
+   </div>
 </body>
 </html>
